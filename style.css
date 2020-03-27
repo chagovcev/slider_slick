@@ -106,6 +106,3 @@ html,body{
 .slider-nav button.slick-disabled{
     opacity: 0.2;
 }
-.slider-nav .slick-track{
-    display: block;
-}
