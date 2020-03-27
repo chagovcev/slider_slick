@@ -1,3 +1,5 @@
+// slider
+
 $(document).ready(function(){
     $('.slider-nav').slick({
         arrows: true,
@@ -26,6 +28,27 @@ $(document).ready(function(){
         vertical: true,
         verticalSwiping: true,
 
-    });
-    
+    });    
 });
+
+
+
+//page input
+
+const input = document.querySelector('input'),
+    plus = document.querySelector('.amount__plus'),
+    minus = document.querySelector('.amount__minus');
+
+input.value = 0;
+
+input.addEventListener(('input'), () => {
+    input.value = input.value.replace(/[^0-9]/, '');
+})
+plus.addEventListener(('click'), () => {
+       input.value = +input.value + 1;
+});
+minus.addEventListener(('click'), () => {
+    if(input.value == 0) {return;}
+    input.value = +input.value - 1;
+});
+

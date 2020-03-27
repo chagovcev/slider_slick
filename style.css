@@ -1,3 +1,5 @@
+/* Slider */
+
 html,body{
     height: 100%;
     background-color: #ddd1d1;
@@ -106,6 +108,45 @@ html,body{
 .slider-nav button.slick-disabled{
     opacity: 0.2;
 }
-.clas{
-    background: #000;
+.slider-nav .slick-track{
+    display: block;
+}
+
+/* Input */
+
+body{
+    margin: 3rem;
+    box-sizing: border-box;
+}
+.amount{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+}
+input{
+    width: 87%;
+    height: 1rem;
+    padding: 10px;
+}
+.amount__numb-controls{
+    display: flex;
+    /* justify-content: flex-end; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.amount__numb-controls div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: rgb(153, 153, 153);
+    cursor: pointer;
+}
+.amount__numb-controls div:hover{
+    background-color: rgb(221, 220, 220);
+    font-size: 24px;
 }
