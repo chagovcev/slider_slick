@@ -14,47 +14,28 @@
     
     <div class="container">
         <div class="box">
-            <!-- <div class="main-window">
+            <div class="main-window">
                 <div class="slides_main">
-                    <img src="/img/01.jpg" alt="">
+                    <!-- класс data-lazy не загружает фотки сразу все, а только когда их скролят (для быстродействия страницы) -->
+                    <img data-lazy="/img/big/01.jpg" alt="">
                 </div>
                 <div class="slides_main">
-                    <img src="/img/02.jpg" alt="">
+                    <img data-lazy="/img/big/02.jpg" alt="">
                 </div>
                 <div class="slides_main">
-                    <img src="/img/03.jpg" alt="">
+                    <img data-lazy="/img/big/03.jpg" alt="">
                 </div>
                 <div class="slides_main">
-                    <img src="/img/04.jpg" alt="">
+                    <img data-lazy="/img/big/04.jpg" alt="">
                 </div>
                 <div class="slides_main">
-                    <img src="/img/05.jpg" alt="">
+                    <img data-lazy="/img/big/05.jpg" alt="">
                 </div>
                 <div class="slides_main">
-                    <img src="/img/06.jpg" alt="">
+                    <img data-lazy="/img/big/06.jpg" alt="">
                 </div>   
-            </div>  -->
-            <!-- <div class="slider-nav">
-                <div class="slides_all">
-                    <img src="/img/01.jpg" alt="">
-                </div>
-                <div class="slides_all">
-                    <img src="/img/02.jpg" alt="">
-                </div>
-                <div class="slides_all">
-                    <img src="/img/03.jpg" alt="">
-                </div>
-                <div class="slides_all">
-                    <img src="/img/04.jpg" alt="">
-                </div>
-                <div class="slides_all">
-                    <img src="/img/05.jpg" alt="">
-                </div>
-                <div class="slides_all">
-                    <img src="/img/06.jpg" alt="">
-                </div>
-            </div>  -->
-
+            </div> 
+            
             <div class="slider-nav">
                 <div class="slider-nav__item">
                     <img src="/img/01.jpg" alt="">
@@ -64,7 +45,10 @@
                 </div>
                 <div class="slider-nav__item">
                     <img src="/img/03.jpg" alt="" >
-                </div>                
+                </div>   
+                <div class="slider-nav__item">
+                    <img src="/img/04.jpg" alt="" >
+                </div>              
                 <div class="slider-nav__item">
                     <img src="/img/05.jpg" alt="">
                 </div>
@@ -72,6 +56,13 @@
                     <img src="/img/06.jpg" alt="">
                 </div>
             </div> 
+
+            <div class="content">
+                <button class="btn_play">Play</button>
+                <button class="btn_pause">Pause</button>
+                <a href="" class="link_add">Добавить</a>
+                <a href="" class="link_remove">Удалить</a>
+            </div>
                                    
         </div>
     </div>
